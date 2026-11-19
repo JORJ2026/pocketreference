@@ -332,3 +332,31 @@ details.cx{margin-top:.5rem;font-size:.88rem}details.cx summary{cursor:pointer;c
 .chapter-photo figcaption{padding:.35rem .7rem;color:var(--mut);font-size:.76rem;line-height:1.4}
 .chapter-photo figcaption a{white-space:nowrap}
 @media(max-width:640px){.chapter-photo{border-radius:14px}.chapter-photo img{height:210px}}
+
+/* Additional documentary photos inside selected reference sections */
+.section-photo{margin:.85rem 0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.section-photo img{display:block;width:100%;height:clamp(170px,24vw,250px);object-fit:cover;background:var(--code)}
+.section-photo figcaption{padding:.32rem .65rem;color:var(--mut);font-size:.74rem;line-height:1.4}
+.section-photo figcaption a{white-space:nowrap}
+.section-photo-rope-cable img{object-fit:contain}
+
+.section-photo-electrical img,.section-photo-electronics img{object-fit:contain}
+
+.section-photo-science img,.section-photo-constants img{object-fit:contain}
+
+.section-photo-mine-mill img{object-fit:contain}
+
+.section-photo-air-gases img,.section-photo-pipe-fittings img,.section-photo-water img,.section-photo-weather img{object-fit:contain;background:#fff}
+
+.section-photo-general1 img,.section-photo-general2 img,.section-photo-geology img,.section-photo-computers img{object-fit:contain;background:#fff}
+
+/* Technical chapter diagrams: preserve the full drawing instead of cropping it. */
+.section-photo-diagram img{height:clamp(220px,32vw,360px);object-fit:contain;background:#fff}
+@media print{.section-photo-diagram img{height:auto;max-height:4.8in;object-fit:contain}}
+
+
+/* Bookshelf */
+.book-library{align-items:stretch}
+.book-library .card{display:flex;flex-direction:column;gap:.25rem}
+.book-actions{display:grid;gap:.15rem;margin-top:auto}
+#main>h2{margin:1.5rem 0 .65rem;font-size:1.15rem}
