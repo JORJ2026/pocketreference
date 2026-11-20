@@ -360,3 +360,17 @@ details.cx{margin-top:.5rem;font-size:.88rem}details.cx summary{cursor:pointer;c
 .book-library .card{display:flex;flex-direction:column;gap:.25rem}
 .book-actions{display:grid;gap:.15rem;margin-top:auto}
 #main>h2{margin:1.5rem 0 .65rem;font-size:1.15rem}
+
+/* home page: categories are collapsed by default */
+.hc-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.8rem 0 0;color:var(--mut);font-size:.88rem}.hc-bar span{flex:1 1 14rem}.hc-bar .btn{font-size:.82rem;padding:.3rem .7rem}
+details.hc-card{align-self:start}
+details.hc-card>summary,details.hc-cat>summary{list-style:none;cursor:pointer}
+details.hc-card>summary::-webkit-details-marker,details.hc-cat>summary::-webkit-details-marker{display:none}
+details.hc-card>summary h3::after,details.hc-cat>summary h3::after{content:'▸';margin-left:auto;color:var(--mut);font-size:.9em}
+details.hc-card[open]>summary h3::after,details.hc-cat[open]>summary h3::after{content:'▾'}
+details.hc-card[open]>summary{margin-bottom:.4rem}
+details.hc-card>summary:focus-visible,details.hc-cat>summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:6px}
+.hc-cat>summary>h3{border-bottom:2px solid var(--acc);padding-bottom:.3rem;margin-bottom:.2rem;display:flex;align-items:center;flex-wrap:wrap;gap:.4rem}
+.hc-cat>summary>.hc-bl{margin-bottom:.4rem}
+
+pre.code{background:var(--card,#f4f4f4);border:1px solid var(--bd,#ccc);border-radius:8px;padding:.7rem .9rem;overflow-x:auto;font:.85rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre;tab-size:4;margin:.6rem 0}
